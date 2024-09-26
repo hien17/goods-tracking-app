@@ -11,7 +11,23 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "next": "14.2.13",
+    "@hookform/resolvers": "^3.9.0",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@uploadthing/react": "^6.7.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "lucide-react": "^0.435.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "react-hook-form": "^7.53.0",
+    "svix": "^1.30.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "uploadthing": "^6.13.2",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "typescript": "^5",
