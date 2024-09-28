@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes border-pulse {
+  0% {
+    clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    clip-path: inset(0 0 0 98%);
+  }
+  100% {
+    clip-path: inset(0 0 98% 0);
+  }
+}
+
+.animate-border-pulse {
+  animation: border-pulse 4s linear infinite;
+}
