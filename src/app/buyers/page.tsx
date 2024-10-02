@@ -10,9 +10,9 @@ import { Progress } from '@/components/ui/progress'
 import { MapPinIcon, TruckIcon, ShoppingBagIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 const productImages = [
-  '/placeholder.svg?height=400&width=400&text=Apple+1',
-  '/placeholder.svg?height=400&width=400&text=Apple+2',
-  '/placeholder.svg?height=400&width=400&text=Apple+3',
+  'https://static.wixstatic.com/media/9a0edd_b027d7d7114845989887596ccc0ecf58~mv2.jpg/v1/crop/x_857,y_0,w_1793,h_3024/fill/w_560,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Apples%20Sweet%20Tango%20Red_JPG.jpg',
+  'https://organicmandya.com/cdn/shop/files/Apples_bf998dd2-0ee8-4880-9726-0723c6fbcff3.jpg?v=1721368465&width=1000',
+  'https://www.biotropic.com/images/news/2018/beitragsbilder/Apfel-DSC06210-1200px.jpg',
 ]
 
 const mapContainerStyle = {
@@ -108,7 +108,7 @@ export default function Buyer() {
   }
 
   return (
-    <div className='mx-auto my-20 flex w-full flex-col gap-6 rounded-xl border-2 border-black border-opacity-40 bg-gray-100 p-6 shadow-lg md:flex-row'>
+    <div className='mx-auto my-20 flex w-full flex-col gap-6 rounded-xl border border-slate-800 border-opacity-40 bg-gray-100 p-6 shadow-lg md:flex-row'>
       <Card className='group relative flex-1 overflow-hidden bg-white transition-shadow duration-300 hover:shadow-xl'>
         <CardContent className='p-0'>
           <div className='relative h-[400px]'>
@@ -118,13 +118,13 @@ export default function Buyer() {
               className='h-full w-full object-cover'
             />
             <Button
-              className='absolute left-2 top-1/2 -translate-y-1/2 transform bg-white/50 hover:bg-white/75'
+              className='absolute left-2 top-1/2 z-10 -translate-y-1/2 transform bg-white/50 hover:bg-white/75'
               onClick={prevImage}
             >
               <ChevronLeftIcon className='h-6 w-6' />
             </Button>
             <Button
-              className='absolute right-2 top-1/2 -translate-y-1/2 transform bg-white/50 hover:bg-white/75'
+              className='absolute right-2 top-1/2 z-10 -translate-y-1/2 transform bg-white/50 hover:bg-white/75'
               onClick={nextImage}
             >
               <ChevronRightIcon className='h-6 w-6' />

@@ -3,6 +3,7 @@ import { Zap } from 'lucide-react'
 import { menuItems } from '@/constants'
 import { motion } from 'framer-motion'
 import { useCallback, useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 const Sidebar = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -14,8 +15,11 @@ const Sidebar = () => {
     fruits: '',
   })
 
+  const router = useRouter()
+
   const handlePageChange = useCallback((page: string) => {
     setActivePage(page)
+    router.push(`/${page.toLowerCase()}`)
   }, [])
 
   return (

@@ -1,12 +1,14 @@
 export const menuItems = [
-  { icon: 'cube', label: 'Raw Materials' },
-  { icon: 'layers', label: 'Batches' },
+  { icon: 'home', label: 'Home' },
+  // { icon: 'cube', label: 'Raw Materials' },
+  // { icon: 'layers', label: 'Batches' },
   { icon: 'users', label: 'Producers' },
   { icon: 'box', label: 'Manufacturing' },
   { icon: 'truck', label: 'Transportation' },
-  { icon: 'tag', label: 'Lot Tracking' },
+  // { icon: 'tag', label: 'Lot Tracking' },
   { icon: 'share-2', label: 'Distributors' },
-  { icon: 'settings', label: 'Processes' },
+  { icon: 'buy', label: 'Buyers' },
+  // { icon: 'settings', label: 'Processes' },
 ]
 
 export const distributors = [
